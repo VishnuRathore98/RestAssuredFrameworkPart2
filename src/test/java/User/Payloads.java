@@ -15,8 +15,8 @@ public class Payloads {
             "\"phone\": \""+phone+"\","+
             "\"userStatus\": 0}";
     }
-    public static Map<String,String> getMapData(String id, String userName, String fName, String lName, String email, String pass, String phone, String uStatus){
-        Map<String,String> payload = new HashMap<>();
+    public static Map<String,Object> getMapData(String id, String userName, String fName, String lName, String email, String pass, String phone, String uStatus){
+        Map<String,Object> payload = new HashMap<>();
         payload.put("id",id);
         payload.put("username",userName);
         payload.put("firstName",fName);

@@ -18,7 +18,7 @@ public class RestUtils {
 
     }
 
-    public static Response performPost(String endpoint, Map<String,String> payload, Map<String,String> headers){
+    public static Response performPost(String endpoint, Map<String,Object> payload, Map<String,String> headers){
         return RestAssured.given().log().all()
             .headers(headers)
             .contentType(ContentType.JSON)

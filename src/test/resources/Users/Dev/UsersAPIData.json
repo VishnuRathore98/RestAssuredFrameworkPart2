@@ -1,0 +1,84 @@
+{
+  "create_user": "https://petstore.swagger.io/v2/user",
+  "create_user_body":
+                      {
+                        "id": 0,
+                        "username": "string",
+                        "firstName": "string",
+                        "lastName": "string",
+                        "email": "string",
+                        "password": "string",
+                        "phone": "string",
+                        "userStatus": 0
+                      },
+  "login_user": "https://petstore.swagger.io/v2/login",
+  "login_user_body": {
+                        "username": "string",
+                        "password": "string"
+                      },
+
+  "logout_user": "https://petstore.swagger.io/v2/logout",
+
+  "update_user": "https://petstore.swagger.io/v2/user/{userName}",
+  "update_user_body": {
+                        "id": 0,
+                        "username": "string",
+                        "firstName": "string",
+                        "lastName": "string",
+                        "email": "string",
+                        "password": "string",
+                        "phone": "string",
+                        "userStatus": 0
+                      },
+  "get_user": "https://petstore.swagger.io/v2/user/{userName}",
+
+  "delete_user": "https://petstore.swagger.io/v2/user/{userName}",
+
+  "create_user_with_array": "https://petstore.swagger.io/v2/user/createWithArray",
+  "create_user_with_array_body": [
+                                  {
+                                    "id": 0,
+                                    "username": "string",
+                                    "firstName": "string",
+                                    "lastName": "string",
+                                    "email": "string",
+                                    "password": "string",
+                                    "phone": "string",
+                                    "userStatus": 0
+                                  },
+                                  {
+                                    "id": 0,
+                                    "username": "string",
+                                    "firstName": "string",
+                                    "lastName": "string",
+                                    "email": "string",
+                                    "password": "string",
+                                    "phone": "string",
+                                    "userStatus": 0
+                                  }
+                                ],
+
+  "create_user_with_list": "https://petstore.swagger.io/v2/user/createWithList",
+  "create_user_with_list_body": [
+                                  {
+                                    "id": 0,
+                                    "username": "string",
+                                    "firstName": "string",
+                                    "lastName": "string",
+                                    "email": "string",
+                                    "password": "string",
+                                    "phone": "string",
+                                    "userStatus": 0
+                                  },
+                                  {
+                                    "id": 0,
+                                    "username": "string",
+                                    "firstName": "string",
+                                    "lastName": "string",
+                                    "email": "string",
+                                    "password": "string",
+                                    "phone": "string",
+                                    "userStatus": 0
+                                  }
+                                ]
+}
