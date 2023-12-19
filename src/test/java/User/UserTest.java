@@ -17,7 +17,7 @@ public class UserTest {
     String userName = faker.name().username();
 
     // Creating a new user
-    @Test
+    @Test(priority = 1)
     void createUser() throws IOException {
 //        The following lines of commented code can be used to define and use User data based on env
 //        like different type of data for Dev, QA, and Prod.
@@ -31,7 +31,7 @@ public class UserTest {
         Response response = RestUtils.performPost(endpoint,Payloads.getMapData(faker.number().digits(4),userName,faker.name().firstName(),faker.name().lastName(),faker.internet().emailAddress(),faker.internet().password(),faker.phoneNumber().cellPhone(),"1"),new HashMap<>());
         Assert.assertEquals(response.statusCode(),200);
     }
-    @Test
+    @Test(priority = 2)
     void getUser(){
         String endpoint = "https://petstore.swagger.io/v2/user/{userName}";
         Map<String,String> param = new HashMap<>();

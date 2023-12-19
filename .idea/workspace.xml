@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb46786f-c01e-45b8-a5f7-dd728d56541e" name="Changes" comment="Added UserAPIs, Base and JSON file for endpoints.">
+    <list default="true" id="eb46786f-c01e-45b8-a5f7-dd728d56541e" name="Changes" comment="&quot;Implemented basic extent report.&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reporting/ExtentReportManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reporting/ExtentReportManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reporting/Setup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reporting/Setup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +125,8 @@
     <MESSAGE value="Added environment specific runtime data json files." />
     <MESSAGE value="Added apache-maven-surefire-plugin and specified tests to run on &quot;maven test&quot; command." />
     <MESSAGE value="Added UserAPIs, Base and JSON file for endpoints." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added UserAPIs, Base and JSON file for endpoints." />
+    <MESSAGE value="Running tests parallely using threads also attaching tests to threads. Implementing custom test logging." />
+    <MESSAGE value="&quot;Implemented basic extent report.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Implemented basic extent report.&quot;" />
   </component>
 </project>
