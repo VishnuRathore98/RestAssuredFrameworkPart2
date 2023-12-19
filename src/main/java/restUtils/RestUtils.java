@@ -43,14 +43,23 @@ public class RestUtils {
         QueryableRequestSpecification queryableRequestSpecification = SpecificationQuerier.query(requestSpecification);
         ExtentReportManager.logInfoDetails("Endpoint is: "+queryableRequestSpecification.getBaseUri());
         ExtentReportManager.logInfoDetails("Method is: "+queryableRequestSpecification.getMethod());
-        ExtentReportManager.logInfoDetails("Headers are: "+queryableRequestSpecification.getHeaders().asList().toString());
-        ExtentReportManager.logInfoDetails("Request body is: "+queryableRequestSpecification.getBody());
+//      Printing headers
+        ExtentReportManager.logInfoDetails("Headers are: ");
+        ExtentReportManager.printHeaders(queryableRequestSpecification.getHeaders().asList());
+//      Printing JSON
+        ExtentReportManager.logInfoDetails("Request body is: ");
+        ExtentReportManager.logJson(queryableRequestSpecification.getBody());
     }
 
     public static void printResponseLogInReport(Response response){
         ExtentReportManager.logInfoDetails("Response status is: "+response.getStatusCode());
-        ExtentReportManager.logInfoDetails("Response headers are: "+response.getHeaders().asList().toString());
-        ExtentReportManager.logInfoDetails("Response body is: "+response.getBody());
+//      Printing Headers
+        ExtentReportManager.logInfoDetails("Response headers are: ");
+        ExtentReportManager.printHeaders(response.getHeaders().asList());
+
+//      Printing JSON
+        ExtentReportManager.logInfoDetails("Response body is: ");
+        ExtentReportManager.logJson(response.getBody().prettyPrint());
     }
 
 
