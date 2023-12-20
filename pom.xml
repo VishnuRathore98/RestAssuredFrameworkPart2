@@ -35,6 +35,7 @@
         <javafakerVersion>1.0.2</javafakerVersion>
         <lombokVersion>1.18.30</lombokVersion>
         <apacheCommonsVersion>3.14.0</apacheCommonsVersion>
+        <datafakerVersion>2.0.2</datafakerVersion>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
@@ -49,7 +50,18 @@
             <artifactId>javafaker</artifactId>
             <version>${javafakerVersion}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.datafaker/datafaker -->
+
+<!-- This is a newer version of java faker, and contains all of its features and new updates -->
+        <dependency>
+            <groupId>net.datafaker</groupId>
+            <artifactId>datafaker</artifactId>
+            <version>${datafakerVersion}</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+<!-- This library is used to generate some random string data -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
