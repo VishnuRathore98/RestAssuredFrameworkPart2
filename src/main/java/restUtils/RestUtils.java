@@ -39,6 +39,16 @@ public class RestUtils {
         return response;
     }
 
+    public static Response performPost(String endpoint, Object payload, Map<String,String> headers){
+        RequestSpecification requestSpecification = getRequestSpecification(endpoint,payload,headers);
+        Response response = requestSpecification.post();
+        System.out.println(endpoint+"\n"+payload+"\n"+headers);
+        printRequestLogInReport(requestSpecification);
+        printResponseLogInReport(response);
+        return response;
+    }
+
+
     public static void printRequestLogInReport(RequestSpecification requestSpecification){
         QueryableRequestSpecification queryableRequestSpecification = SpecificationQuerier.query(requestSpecification);
         ExtentReportManager.logInfoDetails("Endpoint is: "+queryableRequestSpecification.getBaseUri());
@@ -68,11 +78,17 @@ public class RestUtils {
 //        Map.Entry<String, String> entry = params.entrySet().iterator().next();
 //        String key = entry.getKey();
 //        String value = entry.getValue();
-        return RestAssured.given().log().all()
-            .pathParam(params.entrySet().iterator().next().getKey(),params.entrySet().iterator().next().getValue())
-            .contentType(ContentType.JSON)
-            .get(endpoint)
-            .then().log().all().extract().response();
+//        RequestSpecification requestSpecification = getRequestSpecification(endpoint,params);
+        Response response = RestAssured.given()
+//            .pathParam("userName",userName)
+//            .contentType(ContentType.JSON)
+            .accept("application/json")
+            .when()
+            .get(endpoint+userName);
+        System.out.println(endpoint+userName);
+//        printRequestLogInReport(requestSpecification);
+        printResponseLogInReport(response);
+        return response;
     }
 }
 

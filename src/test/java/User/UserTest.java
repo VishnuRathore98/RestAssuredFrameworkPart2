@@ -1,6 +1,7 @@
 package User;
 
-import com.github.javafaker.Faker;
+//import com.github.javafaker.Faker;
+//import net.datafaker.Faker;
 import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.Assert;
@@ -10,13 +11,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+//import static User.Payloads.userName;
+
 public class UserTest {
-
-    Faker javafaker = new Faker();
-    String userName = javafaker.name().username();
-
-//  Updated version of java faker
-    net.datafaker.Faker datafaker = new net.datafaker.Faker();
 
     // Creating a new user
     @Test(priority = 1)
@@ -30,16 +27,16 @@ public class UserTest {
 //        Map<String,String> payload = Payloads.getMapData("","","","","","","","");
 
         String endpoint = "https://petstore.swagger.io/v2/user";
-        Response response = RestUtils.performPost(endpoint,Payloads.getMapData(javafaker.number().digits(4),userName,javafaker.name().firstName(),javafaker.name().lastName(),javafaker.internet().emailAddress(), RandomStringUtils.randomAlphanumeric(8),datafaker.phoneNumber().cellPhone(),"1"),new HashMap<>());
+        Response response = RestUtils.performPost(endpoint,Payloads.getCreateUserPayloadFromPOJO(),new HashMap<>());
         Assert.assertEquals(response.statusCode(),200);
     }
     @Test(priority = 2)
     void getUser(){
-        String endpoint = "https://petstore.swagger.io/v2/user/{userName}";
+        String endpoint = "https://petstore.swagger.io/v2/user/";
         Map<String,String> param = new HashMap<>();
-        param.put("userName",userName);
+        param.put("userName",Payloads.getCreateUserPayloadFromPOJO().getUserName());
 
-        Response response = RestUtils.performGet(endpoint,"",param);
+        Response response = RestUtils.performGet(endpoint,Payloads.getCreateUserPayloadFromPOJO().getUserName(),new HashMap<>());
         Assert.assertEquals(response.statusCode(),200);
     }
 }
