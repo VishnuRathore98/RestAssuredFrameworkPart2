@@ -22,7 +22,7 @@ public class Payloads {
             "\"firstName\": \""+javafaker.name().firstName()+"\","+
             "\"lastName\": \""+javafaker.name().lastName()+"\","+
             "\"email\": \""+javafaker.internet().emailAddress()+"\","+
-            "\"password\": \""+ RandomStringUtils.randomAlphanumeric(8)+"\","+
+            "\"password\": \""+RandomStringUtils.randomAlphanumeric(8)+"\","+
             "\"phone\": \""+datafaker.phoneNumber().cellPhone()+"\","+
             "\"userStatus\": 0}";
     }

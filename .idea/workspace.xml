@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb46786f-c01e-45b8-a5f7-dd728d56541e" name="Changes" comment="&quot;Implemented basic extent report.&quot;">
-      <change afterPath="$PROJECT_DIR$/TestReport2023_12_23_08_05_02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestReport2023_12_23_08_11_47.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestReport2023_12_23_08_20_42.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestReport2023_12_23_08_36_55.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestReport2023_12_23_08_42_55.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestReport2023_12_23_08_44_32.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestReport2023_12_23_08_51_30.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestReport2023_12_23_08_52_51.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestReport2023_12_23_08_56_01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/RandomDataGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/RandomDataTypesName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/User/pojos/UserPayloadAsPOJO.java" afterDir="false" />
+    <list default="true" id="eb46786f-c01e-45b8-a5f7-dd728d56541e" name="Changes" comment="&quot;Added payload as POJO.&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/restUtils/RestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restUtils/RestUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/User/Payloads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/Payloads.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/User/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/User/pojos/UserPayloadAsPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/pojos/UserPayloadAsPOJO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702828556744</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="&quot;Added payload as POJO.&quot;">
+      <option name="closed" value="true" />
+      <created>1703303507531</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703303507531</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -142,6 +138,7 @@
     <MESSAGE value="Added UserAPIs, Base and JSON file for endpoints." />
     <MESSAGE value="Running tests parallely using threads also attaching tests to threads. Implementing custom test logging." />
     <MESSAGE value="&quot;Implemented basic extent report.&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Implemented basic extent report.&quot;" />
+    <MESSAGE value="&quot;Added payload as POJO.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Added payload as POJO.&quot;" />
   </component>
 </project>
