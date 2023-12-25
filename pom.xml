@@ -36,6 +36,7 @@
         <lombokVersion>1.18.30</lombokVersion>
         <apacheCommonsVersion>3.14.0</apacheCommonsVersion>
         <datafakerVersion>2.0.2</datafakerVersion>
+        <javersVersion>7.3.6</javersVersion>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
@@ -100,6 +101,14 @@
             <artifactId>extentreports</artifactId>
             <version>${extentVersion}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.javers/javers-core -->
+        <dependency>
+            <groupId>org.javers</groupId>
+            <artifactId>javers-core</artifactId>
+            <version>${javersVersion}</version>
+        </dependency>
+
 
     </dependencies>
 

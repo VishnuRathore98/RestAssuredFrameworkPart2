@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb46786f-c01e-45b8-a5f7-dd728d56541e" name="Changes" comment="&quot;Added functionality for custom data generation as per different scenarios.&quot;">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/User/pojos/CompareObjects.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/User/pojos/Employee.java" afterDir="false" />
+    <list default="true" id="eb46786f-c01e-45b8-a5f7-dd728d56541e" name="Changes" comment="&quot;Added examples for comparing two objects of the same class by their fields and values.&quot;">
+      <change afterPath="$PROJECT_DIR$/src/test/java/User/javersExamples/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/User/javersExamples/JaversTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/User/javersExamples/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestReport2023_12_23_09_00_29.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestReport2023_12_25_11_28_13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/User/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/User/pojos/UserPayloadAsPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/pojos/UserPayloadAsPOJO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,13 +65,26 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CompareObjects">
+  <component name="RunManager" selected="Application.JaversTest">
     <configuration name="CompareObjects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="User.pojos.CompareObjects" />
       <module name="RestAssuredFrameworkPart2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="User.pojos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JaversTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="User.javersExamples.JaversTest" />
+      <module name="RestAssuredFrameworkPart2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="User.javersExamples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,6 +123,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JaversTest" />
         <item itemvalue="Application.CompareObjects" />
       </list>
     </recent_temporary>
@@ -158,8 +177,39 @@
       <option name="project" value="LOCAL" />
       <updated>1703386579777</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="&quot;Added examples for comparing two objects of the same class by their fields and values.&quot;">
+      <option name="closed" value="true" />
+      <created>1703474972241</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703474972241</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -170,6 +220,7 @@
     <MESSAGE value="&quot;Implemented basic extent report.&quot;" />
     <MESSAGE value="&quot;Added payload as POJO.&quot;" />
     <MESSAGE value="&quot;Added functionality for custom data generation as per different scenarios.&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Added functionality for custom data generation as per different scenarios.&quot;" />
+    <MESSAGE value="&quot;Added examples for comparing two objects of the same class by their fields and values.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Added examples for comparing two objects of the same class by their fields and values.&quot;" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package User.pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,6 +18,9 @@ import java.util.stream.Stream;
 @AllArgsConstructor
 // For allowing us to be able to add some custom data and the rest of as a default data.
 @Builder(toBuilder = true)
+// For ignoring all the data that we get in the response which we haven't sent in the request
+// and don't want to assert against our request payload.
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class UserPayloadAsPOJO {
 
     public static com.github.javafaker.Faker javafaker = new com.github.javafaker.Faker();
