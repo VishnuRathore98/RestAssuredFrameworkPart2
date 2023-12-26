@@ -2,6 +2,8 @@ package User;
 
 //import com.github.javafaker.Faker;
 //import net.datafaker.Faker;
+//import static User.Payloads.userName;
+
 import User.pojos.UserPayloadAsPOJO;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -9,14 +11,16 @@ import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import restUtils.AssertionUtils;
 import restUtils.RestUtils;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-//import static User.Payloads.userName;
 
 public class UserTest {
+
     UserPayloadAsPOJO payload;
+
     // Creating a new user
     @Test(priority = 1)
     void createUser() throws IOException {
@@ -43,6 +47,25 @@ public class UserTest {
         payload = new UserPayloadAsPOJO().toBuilder().firstName("John").build();
         Response response = RestUtils.performPost(endpoint,payload,new HashMap<>());
         Assert.assertEquals(response.statusCode(),200);
+
+//      The following block of code prints actual values and expected values side by side in tabular format and does
+//      comparison on them.
+        {
+            UserPayloadAsPOJO request = new UserPayloadAsPOJO().toBuilder().firstName("John").build();
+            Response response2 = RestUtils.performPost(endpoint,payload,new HashMap<>());
+            Map<String, Object> expectedValuesMap = new HashMap<>();
+            expectedValuesMap.put("id",request.getId());
+            expectedValuesMap.put("username",request.getUserName());
+            expectedValuesMap.put("firstName",request.getFirstName());
+            expectedValuesMap.put("lastName",request.getLastName());
+            expectedValuesMap.put("email",request.getEmail());
+            expectedValuesMap.put("password",request.getPassword());
+            expectedValuesMap.put("phone",request.getPhone());
+            expectedValuesMap.put("userStatus",request.getUserStatus());
+
+            AssertionUtils.assertExpectedValuesWithJsonPath(response2,expectedValuesMap);
+        }
+
     }
 
 //  Getting created user's data

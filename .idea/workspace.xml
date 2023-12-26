@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb46786f-c01e-45b8-a5f7-dd728d56541e" name="Changes" comment="&quot;Added examples for comparing two objects of the same class by their fields and values.&quot;">
-      <change afterPath="$PROJECT_DIR$/src/test/java/User/javersExamples/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/User/javersExamples/JaversTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/User/javersExamples/Student.java" afterDir="false" />
+    <list default="true" id="eb46786f-c01e-45b8-a5f7-dd728d56541e" name="Changes" comment="&quot;Added javers-core library for better comparisons between request and response data with some examples, and README.md file for the project.&quot;">
+      <change afterPath="$PROJECT_DIR$/TestReport2023_12_26_07_04_21.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restUtils/AssertionKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restUtils/AssertionUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestReport2023_12_23_09_00_29.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestReport2023_12_25_11_28_13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/User/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/User/pojos/UserPayloadAsPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/pojos/UserPayloadAsPOJO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +61,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JaversTest">
+  <component name="RunManager" selected="Maven.MyMavenRunner">
     <configuration name="CompareObjects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="User.pojos.CompareObjects" />
       <module name="RestAssuredFrameworkPart2" />
@@ -185,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703474972241</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="&quot;Added javers-core library for better comparisons between request and response data with some examples, and README.md file for the project.&quot;">
+      <option name="closed" value="true" />
+      <created>1703490177216</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703490177216</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +225,7 @@
     <MESSAGE value="&quot;Added payload as POJO.&quot;" />
     <MESSAGE value="&quot;Added functionality for custom data generation as per different scenarios.&quot;" />
     <MESSAGE value="&quot;Added examples for comparing two objects of the same class by their fields and values.&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Added examples for comparing two objects of the same class by their fields and values.&quot;" />
+    <MESSAGE value="&quot;Added javers-core library for better comparisons between request and response data with some examples, and README.md file for the project.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Added javers-core library for better comparisons between request and response data with some examples, and README.md file for the project.&quot;" />
   </component>
 </project>
