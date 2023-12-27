@@ -104,4 +104,24 @@
             <version>${javersVersion}</version>
         </dependency>
 </p>
+<li><a href="https://mvnrepository.com/artifact/org.apache.poi/poi">apache-poi</a></li>
+<p>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${poiVersion}</version>
+        </dependency>
+
+</p>
+<li><a href="https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml">apache-poi-ooxml</a></li>
+<p>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poiooxmlVersion}</version>
+        </dependency>
+
+</p>
 </ol>
