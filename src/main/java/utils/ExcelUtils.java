@@ -30,6 +30,19 @@ public class ExcelUtils {
                 int totalCols = sheet.getRow(i).getPhysicalNumberOfCells();
                 for (int j = 0; j < totalCols; j++) {
                     String cellValue = dataFormatter.formatCellValue(sheet.getRow(i).getCell(j));
+
+//                  Generating Id based on the instructions provided in the Id column if provided user those instructions
+//                  otherwise use the number given.
+
+                    int size = 6;
+                    if (cellValue.contains("RandomId")) {
+//                     With size
+                        if (cellValue.contains("_")) {
+                            size = Integer.parseInt((cellValue.split("_"))[1]);
+                        }
+                        cellValue = String.valueOf(RandomDataGenerator.getRandomNumber(size,size));
+                    }
+
                     mapData.put(allKeys.get(j), cellValue);
                 }
                 dataFromExcel.add(mapData);

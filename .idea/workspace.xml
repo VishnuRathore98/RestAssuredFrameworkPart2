@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb46786f-c01e-45b8-a5f7-dd728d56541e" name="Changes" comment="&quot;Added apache poi dependencies.&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ExcelUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/User/ExcelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/User/NewUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/CreateUserData.xlsx" afterDir="false" />
+    <list default="true" id="eb46786f-c01e-45b8-a5f7-dd728d56541e" name="Changes" comment="&quot;Added functionality of data extraction from Excel sheet.&quot;">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/.~lock.CreateUserData.xlsx#" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ExcelUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ExcelUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/User/NewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/NewUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/CreateUserData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/CreateUserData.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703560227220</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="&quot;Added functionality of data extraction from Excel sheet.&quot;">
+      <option name="closed" value="true" />
+      <created>1703736017340</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703736017340</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,6 +258,7 @@
     <MESSAGE value="&quot;Added javers-core library for better comparisons between request and response data with some examples, and README.md file for the project.&quot;" />
     <MESSAGE value="&quot;Added functionality for representing API request payload, and its response, in a tabular format in ExtentReport, and performed comparison on them.&quot;" />
     <MESSAGE value="&quot;Added apache poi dependencies.&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Added apache poi dependencies.&quot;" />
+    <MESSAGE value="&quot;Added functionality of data extraction from Excel sheet.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Added functionality of data extraction from Excel sheet.&quot;" />
   </component>
 </project>
