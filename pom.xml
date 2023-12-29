@@ -39,6 +39,7 @@
         <javersVersion>7.3.6</javersVersion>
         <poiVersion>5.2.5</poiVersion>
         <poiooxmlVersion>5.2.5</poiooxmlVersion>
+        <poijiVersion>4.1.2</poijiVersion>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
@@ -122,6 +123,12 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>${poiooxmlVersion}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.ozlerhakan/poiji -->
+        <dependency>
+            <groupId>com.github.ozlerhakan</groupId>
+            <artifactId>poiji</artifactId>
+            <version>${poijiVersion}</version>
         </dependency>
 
     </dependencies>

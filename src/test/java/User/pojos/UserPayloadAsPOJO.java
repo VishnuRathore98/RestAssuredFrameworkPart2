@@ -1,6 +1,9 @@
 package User.pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.poiji.annotation.ExcelCell;
+import com.poiji.annotation.ExcelCellName;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -37,13 +40,22 @@ public class UserPayloadAsPOJO {
 
 //    When we want to generate value using POJO class and pass it.
 //    private Gender gender;
-
     private int id = Integer.parseInt(javafaker.number().digits(4));
+
+    @ExcelCell(0)
+    @JsonIgnore
+    private int idValue;
+    @ExcelCellName("UserName")
     private String userName = javafaker.name().username();
+    @ExcelCellName("FirstName")
     private String firstName = javafaker.name().firstName();
+    @ExcelCellName("LastName")
     private String lastName = javafaker.name().lastName();
+    @ExcelCellName("Email")
     private String email = javafaker.internet().emailAddress();
+    @ExcelCellName("Password")
     private String password = RandomStringUtils.randomAlphanumeric(8);
+    @ExcelCellName("Phone")
     private String phone = datafaker.phoneNumber().cellPhone();
     private int userStatus = 0;
 }

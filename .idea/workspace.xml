@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb46786f-c01e-45b8-a5f7-dd728d56541e" name="Changes" comment="&quot;Added functionality of data extraction from Excel sheet.&quot;">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/.~lock.CreateUserData.xlsx#" afterDir="false" />
+    <list default="true" id="eb46786f-c01e-45b8-a5f7-dd728d56541e" name="Changes" comment="&quot;Converting excel data to pojo to send it as payload.And generating id based on instructions given in the Id column.&quot;">
+      <change afterPath="$PROJECT_DIR$/src/test/java/User/PoijiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/User/pojos/UserPoiji.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/CreateUserDataTest.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ExcelUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ExcelUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/User/NewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/NewUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/User/pojos/UserPayloadAsPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/pojos/UserPayloadAsPOJO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/.~lock.CreateUserData.xlsx#" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/.~lock.CreateUserData.xlsx#" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/CreateUserData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/CreateUserData.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,25 +47,26 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/vpsr/IdeaProjects/RestAssuredFrameworkPart2/src/test&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/vpsr/IdeaProjects/RestAssuredFrameworkPart2/src/test/resources/testdata",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/testdata" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ExcelTest">
+  <component name="RunManager" selected="Application.PoijiTest">
     <configuration name="CompareObjects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="User.pojos.CompareObjects" />
       <module name="RestAssuredFrameworkPart2" />
@@ -101,6 +106,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PoijiTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="User.PoijiTest" />
+      <module name="RestAssuredFrameworkPart2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="User.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyMavenRunner" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -132,6 +150,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PoijiTest" />
         <item itemvalue="Application.ExcelTest" />
         <item itemvalue="Application.JaversTest" />
         <item itemvalue="Application.CompareObjects" />
@@ -219,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703736017340</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="&quot;Converting excel data to pojo to send it as payload.And generating id based on instructions given in the Id column.&quot;">
+      <option name="closed" value="true" />
+      <created>1703817403945</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703817403945</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,6 +286,7 @@
     <MESSAGE value="&quot;Added functionality for representing API request payload, and its response, in a tabular format in ExtentReport, and performed comparison on them.&quot;" />
     <MESSAGE value="&quot;Added apache poi dependencies.&quot;" />
     <MESSAGE value="&quot;Added functionality of data extraction from Excel sheet.&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Added functionality of data extraction from Excel sheet.&quot;" />
+    <MESSAGE value="&quot;Converting excel data to pojo to send it as payload.And generating id based on instructions given in the Id column.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Converting excel data to pojo to send it as payload.And generating id based on instructions given in the Id column.&quot;" />
   </component>
 </project>
