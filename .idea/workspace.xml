@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb46786f-c01e-45b8-a5f7-dd728d56541e" name="Changes" comment="&quot;Converting excel data to pojo to send it as payload.And generating id based on instructions given in the Id column.&quot;">
-      <change afterPath="$PROJECT_DIR$/src/test/java/User/PoijiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/User/pojos/UserPoiji.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/CreateUserDataTest.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/User/NewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/NewUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/User/pojos/UserPayloadAsPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/pojos/UserPayloadAsPOJO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/.~lock.CreateUserData.xlsx#" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/.~lock.CreateUserData.xlsx#" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/CreateUserData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/CreateUserData.xlsx" afterDir="false" />
-    </list>
+    <list default="true" id="eb46786f-c01e-45b8-a5f7-dd728d56541e" name="Changes" comment="&quot;Added poiji dependency and using it to get data from excel sheet and passing it as a payload to create user and create extent report.&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -246,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703817403945</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="&quot;Added poiji dependency and using it to get data from excel sheet and passing it as a payload to create user and create extent report.&quot;">
+      <option name="closed" value="true" />
+      <created>1703822831824</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1703822831824</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,6 +285,7 @@
     <MESSAGE value="&quot;Added apache poi dependencies.&quot;" />
     <MESSAGE value="&quot;Added functionality of data extraction from Excel sheet.&quot;" />
     <MESSAGE value="&quot;Converting excel data to pojo to send it as payload.And generating id based on instructions given in the Id column.&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Converting excel data to pojo to send it as payload.And generating id based on instructions given in the Id column.&quot;" />
+    <MESSAGE value="&quot;Added poiji dependency and using it to get data from excel sheet and passing it as a payload to create user and create extent report.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Added poiji dependency and using it to get data from excel sheet and passing it as a payload to create user and create extent report.&quot;" />
   </component>
 </project>
