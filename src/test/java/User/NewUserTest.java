@@ -55,6 +55,7 @@ public class NewUserTest {
         }
         return userData.iterator();
     }
+
     @DataProvider(name = "userDataPoiji")
     public Iterator<UserPayloadAsPOJO> getCreateUserDataPoiji(){
         List<UserPayloadAsPOJO> userData = Poiji.fromExcel(new File("/home/vpsr/IdeaProjects/RestAssuredFrameworkPart2/src/test/resources/testdata/CreateUserData.xlsx"), UserPayloadAsPOJO.class);

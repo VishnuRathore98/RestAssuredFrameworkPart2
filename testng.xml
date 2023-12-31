@@ -6,7 +6,7 @@
     </listeners>
     <test verbose="2" preserve-order="true" name="/home/vpsr/IdeaProjects/RestAssuredFrameworkPart2/src/test/java/User/UserTest.java">
         <classes>
-            <class name = "User.UserTest">
+            <class name = "User.NewUserTest">
                 <methods>
                     <include name="createUser"/>
                     <include name="getUser"/>
