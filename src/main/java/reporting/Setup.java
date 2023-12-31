@@ -8,7 +8,7 @@ import org.testng.ITestResult;
 
 public class Setup implements ITestListener {
 
-    private static ExtentReports extentReports;
+    public static ExtentReports extentReports;
     public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
 
 
@@ -30,7 +30,10 @@ public class Setup implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        ExtentTest test = extentReports.createTest("Test Name "+result.getTestClass().getName()+" - "+result.getMethod().getMethodName());
-        extentTest.set(test);
+//  Commenting these lines of code since we are going to provide new test name and test description
+//  based upon different test scenarios inside the UserTestScenario.java class.
+
+//        ExtentTest test = extentReports.createTest("Test Name "+result.getTestClass().getName()+" - "+result.getMethod().getMethodName());
+//        extentTest.set(test);
     }
 }

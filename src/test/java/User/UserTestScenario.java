@@ -2,10 +2,12 @@ package User;
 
 import User.pojos.CreateUser;
 import User.pojos.UserPayloadAsPOJO;
+import com.aventstack.extentreports.ExtentTest;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import reporting.Setup;
 import restUtils.AssertionUtils;
 import restUtils.RestUtils;
 import utils.ExcelUtils;
@@ -18,6 +20,10 @@ public class UserTestScenario {
 
     @Test(dataProvider = "userDataProvider")
     public void createUserAndVerify(CreateUser user){
+//      Printing test scenario Id as the test name and test scenario description as test description.
+        ExtentTest test = Setup.extentReports.createTest("Test Name "+user.getScenarioId(), user.getScenarioDec());
+        Setup.extentTest.set(test);
+
         Response response = RestUtils.performPost(endpoint,user,new HashMap<>());
 
         if (user.getExpectedStatusCode() != 200) {
@@ -26,6 +32,7 @@ public class UserTestScenario {
             }
             Assert.assertEquals(response.getStatusCode(), user.getExpectedStatusCode());
 //            Assert what error message we should get for using duplicate user Id.
+
 //            Assert.assertEquals(response.jsonPath().getString(""), user.getExpectedErrorMessage());
         }
         else {
