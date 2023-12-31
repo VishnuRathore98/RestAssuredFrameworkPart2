@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ExcelUtils {
     public static List<LinkedHashMap<String ,String >> getExcelDataAsListOfMap(String excelFileName, String sheetName) throws IOException{
@@ -48,6 +49,12 @@ public class ExcelUtils {
                 dataFromExcel.add(mapData);
             }
         }
+
+//      Executing only those test scenarios where "isEnabled is set to be true, in the excel report."
+
+        dataFromExcel = dataFromExcel.stream().filter(keyValuePair -> keyValuePair.get("isEnabled").equalsIgnoreCase("true"))
+            .collect(Collectors.toList());
+
         return dataFromExcel;
     }
 }
